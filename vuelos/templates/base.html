@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Vuelos Rionegro{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="{% url 'register_flight' %}">Registrar Vuelos</a>
+        <a href="{% url 'list_flights' %}">Listar Vuelos</a>
+        <a href="{% url 'flight_statistics' %}">Estadísticas</a>
+    </nav>
+    
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

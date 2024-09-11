@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Lista de Vuelos</h2>
+<ul>
+    {% for flight in flights %}
+    <li>
+        {{ flight.name }} - {{ flight.flight_type }} - Precio: ${{ flight.price }}
+    </li>
+    {% empty %}
+    <li>No hay vuelos registrados.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+

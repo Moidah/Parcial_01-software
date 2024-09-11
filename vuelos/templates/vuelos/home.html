@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bienvenido</h1>
+<a href="{% url 'register_flight' %}">
+    <button>Registrar Vuelos</button>
+</a>
+<a href="{% url 'list_flights' %}">
+    <button>Listar Vuelos</button>
+</a>
+<a href="{% url 'flight_statistics' %}">
+    <button>Ver Estadísticas</button>
+</a>
+{% endblock %}
+
+
+
